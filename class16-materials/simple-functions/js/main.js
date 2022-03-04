@@ -15,7 +15,26 @@ function multiplys(num1, num2, num3) {
 //create a function that takes in three numbers. Add the first two numbers and return the remainder of dividing the sum of the first two numbers by the third number
 function takesThreeNum(num1, num2, num3) {
   const sum = num1 + num2;
-  return sum / num3;
+  return sum % num3;
 }
+
+console.log(takesThreeNum(3, 3, 2));
+
 //---Hard
 //create a function that takes in 4 numbers. Multiply the first two numbers. If the product is greater than 100 add the sum of the last two numbers and console log the value. If the product is less that 100, subtract the difference of the last two numbers and console log the value. If the product is 100, multiply the first three numbers together and alert the remainder of dividing the fourth number
+function take4Nums(num1, num2, num3, num4) {
+  let firstTwoNumsMult = num1 * num2;
+  let sum = 0;
+  if (firstTwoNumsMult > 100) {
+    sum = num3 + num4;
+    console.log(sum);
+  } else if (firstTwoNumsMult < 100) {
+    sum = num3 - num4;
+    console.log(sum);
+  } else {
+    sum = (num1 * num2 * num3) % num4;
+    alert(sum);
+  }
+}
+
+take4Nums(50, 2, 7, 6);
