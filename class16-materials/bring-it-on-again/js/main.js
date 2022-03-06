@@ -45,7 +45,7 @@ function takesFourNums(num1, num2, num3, num4) {
 //*Loops*
 //Create a function that takes in a number. Console log all values from 1 to that number or greater, but count by 3
 function loopy(num) {
-  for (let i = 0; i < num; i += 3) {
+  for (let i = 1; i <= num; i += 3) {
     console.log(i);
   }
 }
