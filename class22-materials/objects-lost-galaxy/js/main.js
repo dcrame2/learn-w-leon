@@ -111,7 +111,27 @@ function Circle(radius) {
 Circle.call({}, 1);
 */
 
-let x = 10;
-let y = x;
+/*
+let obj = { value: 10 };
+function increase(obj) {
+  obj.value++;
+}
 
-x = 20;
+increase(obj);
+console.log(obj);
+*/
+
+function Circle(radius) {
+  (this.radius = radius),
+    (this.draw = function () {
+      console.log("draw bitch");
+    });
+}
+
+const circle = new Circle(10);
+
+// user.token = 'asdasdsd';
+
+circle.location = { x: 1 };
+console.log(circle);
+circle["location"];
