@@ -30,8 +30,9 @@ canCharmanderBattle(32);
 //Loops
 //You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
 function undergroundPokemonLeague(partySize) {
-  for (let i = 1; i <= partySize; i++) {
-    console.log("Pikachu I choose you");
+  for (let i = 0; i < partySize.length; i++) {
+    console.log(`${partySize[i]} I choose you`);
   }
 }
-undergroundPokemonLeague(6);
+// undergroundPokemonLeague(6);
+undergroundPokemonLeague(["hi", "test", "weedle"]);
