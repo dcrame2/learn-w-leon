@@ -18,7 +18,20 @@ function fahrenheitToCelcius(temperature) {
 
 function canCharmanderBattle(currentTemp) {
   let converted = fahrenheitToCelcius(currentTemp);
+  if (converted > 0) {
+    console.log("Lets battle bruh!");
+  } else {
+    console.log("No battling today");
+  }
 }
+
+canCharmanderBattle(32);
 
 //Loops
 //You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
+function undergroundPokemonLeague(partySize) {
+  for (let i = 1; i <= partySize; i++) {
+    console.log("Pikachu I choose you");
+  }
+}
+undergroundPokemonLeague(6);
